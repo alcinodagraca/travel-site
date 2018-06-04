@@ -3,6 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "normalize.css": "^8.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.5.1",
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-watch": "^5.0.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,14 +20,10 @@
     "type": "git",
     "url": "git+https://github.com/alcinodagraca/travel-site.git"
   },
-  "author": "",
+  "author": "Alcino da Graça",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/alcinodagraca/travel-site/issues"
   },
-  "homepage": "https://github.com/alcinodagraca/travel-site#readme",
-  "dependencies": {
-    "jquery": "^3.3.1",
-    "normalize.css": "^8.0.0"
-  }
+  "homepage": "https://github.com/alcinodagraca/travel-site#readme"
 }
