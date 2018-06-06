@@ -1,5 +1,11 @@
+//Import normalize.css files to reset webbrowsers
 @import "node_modules/normalize.css/normalize";
+
+//Base folder imports
 @import "base/_global";
 @import "base/_variables";
+@import "base/_mixins";
+
+//Modules folder Imports
 @import "modules/_large-hero";
 @import "modules/_btn";

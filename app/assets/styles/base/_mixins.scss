@@ -1,0 +1,6 @@
+// Media Queries Mixins
+@mixin atSmall{
+  @media screen and (min-width: 530px){
+    @content;
+  }
+}
