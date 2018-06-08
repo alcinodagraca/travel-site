@@ -1,0 +1,37 @@
+.row{
+
+  &--gutters{
+    margin-right: -65px;
+  }
+
+  &--gutters > div{
+    padding-right: 65px;
+  }
+
+  @include clearFix;
+
+  &--no-b-margin-until-md{
+    margin-bottom: 1rem;
+  }
+  @include atMedium{
+    &--no-b-margin-until-md{
+      margin-bottom: 0;
+    }
+    &--md-4{
+      float: left;
+      width: 33.33%;
+    }
+
+    &--md-4-larger{
+      width: 37%;
+    }
+    &--md-8{
+      float: left;
+      width: 66.66%;
+    }
+
+    &--md-8-smaller{
+      width: 63%;
+    }
+  }
+}

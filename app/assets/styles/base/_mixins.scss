@@ -1,6 +1,30 @@
 // Media Queries Mixins
+
+//Mobile devices Media Query
 @mixin atSmall{
   @media screen and (min-width: 530px){
     @content;
+  }
+}
+
+//Medium devices Media Query
+@mixin atMedium{
+  @media screen and (min-width: 800px){
+    @content;
+  }
+}
+
+//Large devices Media Query
+@mixin atLarge{
+  @media screen and (min-width: 1200px){
+    @content;
+  }
+}
+
+@mixin clearFix{
+  &::after{
+    content: "";
+    clear: both;
+    display: table;
   }
 }

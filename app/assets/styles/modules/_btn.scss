@@ -9,7 +9,10 @@
     background: $mainOrange;
   }
   &--large{
-    font-size: 1.25rem;
     padding: 1.1rem 1.9rem;
+
+    @include atSmall{
+      font-size: 1.25rem;
+    }
   }
 }
