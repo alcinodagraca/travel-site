@@ -46,7 +46,7 @@
       margin-right: auto;
 
       @include atSmall{
-        font-size: 1.875rem;
+        font-size: $genericfontSize;
       }
     }
   }

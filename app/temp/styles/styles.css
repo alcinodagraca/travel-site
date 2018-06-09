@@ -474,8 +474,16 @@ a {
   margin-right: -65px;
 }
 
+.row--gutters-large {
+  margin-right: -100px;
+}
+
 .row--gutters > div {
   padding-right: 65px;
+}
+
+.row--gutters-large > div {
+  padding-right: 100px;
 }
 
 .row::after {
@@ -495,6 +503,10 @@ a {
   .row--md-4 {
     float: left;
     width: 33.33%;
+  }
+  .row__md-6 {
+    float: left;
+    width: 50%;
   }
   .row--md-4-larger {
     width: 37%;
@@ -571,7 +583,7 @@ a {
 
 .generic-content-container p {
   line-height: 1.65;
-  margin: 1.8rem 0;
+  margin: 0 0 1.8rem 0;
 }
 
 @media screen and (min-width: 530px) {
@@ -582,4 +594,75 @@ a {
 
 .generic-content-container p a {
   font-weight: 700;
+}
+
+.section-title {
+  font-size: 2.55rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+@media screen and (min-width: 530px) {
+  .section-title {
+    font-size: 3.75rem;
+  }
+}
+
+.section-title strong {
+  font-weight: 700;
+}
+
+.section-title__icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: .6rem;
+}
+
+@media screen and (min-width: 530px) {
+  .section-title__icon {
+    margin-right: .5rem;
+    display: inline-block;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+
+.feature-item {
+  position: relative;
+  padding-bottom: 2.5rem;
+}
+
+@media screen and (min-width: 530px) {
+  .feature-item {
+    padding-left: 94px;
+  }
+}
+
+.feature-item__icon {
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 530px) {
+  .feature-item__icon {
+    position: absolute;
+    left: 0;
+  }
+}
+
+.feature-item__title {
+  font-size: 1.6rem;
+  margin-top: .7em;
+  font-weight: 300;
+  margin-bottom: .8rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 530px) {
+  .feature-item__title {
+    text-align: left;
+    margin-top: 1em;
+    font-size: 1.875rem;
+  }
 }

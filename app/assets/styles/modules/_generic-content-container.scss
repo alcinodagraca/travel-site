@@ -1,8 +1,7 @@
 .generic-content-container{
-
   p{
     line-height: 1.65;
-    margin: 1.8rem 0;
+    margin: 0 0 1.8rem 0;
 
     @include atSmall{
       font-size: 1.125rem;
