@@ -583,14 +583,3 @@ a {
 .generic-content-container p a {
   font-weight: 700;
 }
-
-.branchTest ul {
-  list-style: none;
-  background: #000;
-  color: #fff;
-}
-
-.branchTest li {
-  float: left;
-  margin-right: 15px;
-}
