@@ -6,6 +6,26 @@
   margin-left: auto;
   overflow: hidden;
 
+  &--no-padding-until-md{
+    padding-left: 0;
+    padding-right: 0;
+
+    @include atMedium{
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+  }
+
+  &--no-padding-until-lg{
+    padding-left: 0;
+    padding-right: 0;
+
+    @include atLarge{
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+  }
+
   &--medium{
     max-width: 976px;
   }

@@ -1,5 +1,9 @@
 .row{
 
+  &--t-padding{
+    padding-top: 80px;
+  }
+
   &--gutters{
     margin-right: -65px;
   }
@@ -22,10 +26,20 @@
     margin-bottom: 1rem;
   }
   @include atMedium{
+
+    &--gutters-small{
+      margin-right: -45px;
+    }
+
+    &--gutters-small > div{
+      padding-right: 45px;
+    }
+
     &--no-b-margin-until-md{
       margin-bottom: 0;
     }
-    &--md-4{
+
+    &__md-4{
       float: left;
       width: 33.33%;
     }
@@ -33,16 +47,74 @@
       float: left;
       width: 50%;
     }
-    &--md-4-larger{
+    &__md-4-larger{
       width: 37%;
     }
-    &--md-8{
+    &__md-8{
       float: left;
       width: 66.66%;
     }
 
-    &--md-8-smaller{
+    &__md-8-smaller{
       width: 63%;
+    }
+  }
+
+  @include atLarge{
+
+    &--gutters-small{
+      margin-right: -45px;
+    }
+
+    &--gutters-small > div{
+      padding-right: 45px;
+    }
+
+    &--no-b-margin-until-lg{
+      margin-bottom: 0;
+    }
+
+    &__lg-4{
+      float: left;
+      width: 33.33%;
+    }
+    &__lg-6{
+      float: left;
+      width: 50%;
+    }
+    &__lg-4-larger{
+      width: 37%;
+    }
+    &__lg-8{
+      float: left;
+      width: 66.66%;
+    }
+
+    &__lg-8-smaller{
+      width: 63%;
+    }
+  }
+  /* Equal heiht Rules at Medium*/
+  &--equal-hight-at-md{
+    @include atMedium{
+      display: flex;
+
+      & > div{
+        float: none;
+        display: flex;
+      }
+    }
+  }
+
+  /* Equal heiht Rules at Large*/
+  &--equal-hight-at-lg{
+    @include atLarge{
+      display: flex;
+
+      & > div{
+        float: none;
+        display: flex;
+      }
     }
   }
 }
