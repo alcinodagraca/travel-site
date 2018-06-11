@@ -4,7 +4,7 @@
   @include atSmall{
     padding: 4.5rem 0;
   }
-  &--no-b-padding-until-md{
+  &--no-b-padding-until-lg{
     padding-bottom: 0;
 
     @include atMedium{
