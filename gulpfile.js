@@ -6,7 +6,7 @@ var browserSync = require('browser-sync').create();
 var autoprefixer = require('autoprefixer');
 var svgSprite = require('gulp-svg-sprite');
 var rename = require('gulp-rename');
-var del = require('del');
+//var del = require('del');
 
 
 // createSprite Task configuration
